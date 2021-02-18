@@ -22,7 +22,8 @@
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: 	#2F4F4F;
+  /*background-color: 	#2F4F4F;*/
+  background-color: #242526;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
@@ -56,27 +57,33 @@
 
 /* Style the current/active link */
 .calbar a.active {
-  background-color: 	#2F4F4F;
+  /*background-color: 	#2F4F4F;*/
+  background-color: #242526;
 }
 
 h1  {
 	text-align: center;
 }
 #enjoyment:hover{
-	background-color: #9DC183;
+	/*background-color: #9DC183;*/
+  background-color: #696969;
 
 }
 #sadness:hover{
-	background-color: #CD5C5C;
+	/*background-color: #CD5C5C;*/
+  background-color: #696969;
 }
 #fear:hover{
-	background-color: #F8E473;
+	/*background-color: #F8E473;*/
+  background-color: #696969;
 }
 #anger:hover{
-	background-color: #598BAF;
+	/*background-color: #598BAF;*/
+  background-color: #696969;
 }
 #disgust:hover{
-	background-color: #9966CB;
+	/*background-color: #9966CB;*/
+  background-color: #696969;
 }
 .calendar {
 	height: 75%;
