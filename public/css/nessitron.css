@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #696969;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: 	#2F4F4F;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+.calbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.calbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.calbar a:hover {
+  background-color: #696969;
+}
+
+/* Style the current/active link */
+.calbar a.active {
+  background-color: 	#2F4F4F;
+}
+
+h1  {
+	text-align: center;
+}
+#enjoyment:hover{
+	background-color: #9DC183;
+
+}
+#sadness:hover{
+	background-color: #CD5C5C;
+}
+#fear:hover{
+	background-color: #F8E473;
+}
+#anger:hover{
+	background-color: #598BAF;
+}
+#disgust:hover{
+	background-color: #9966CB;
+}
+.calendar {
+	height: 75%;
+	width: 100%;
+}
+.navButton{
+	background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color: white;
+}

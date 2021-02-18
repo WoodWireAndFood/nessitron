@@ -1,8 +1,31 @@
 <html>
 <head>
-	<title>Test Page</title>
+	<title>Nessitron</title>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/nessitron.css">
 </head>
 <body>
-Begin here (or replace this with any static code already written).
+
+
+
+<div class="navbar">
+  <a class="active" href="#"><button class="navButton" disabled>Add Emotion</button></a>
+  <a href="calendar"><button class="navButton">Calendar</button></a>
+  <a href="journal"><button class="navButton">Journal</button></a>
+  <a href="settings"><button class="navButton">Settings</button></a>
+</div>
+	<br>
+	<h1>How are you feeling?</h1>
+
+	<div class="list-group">
+		<button type="button" class="list-group-item list-group-item-action btn-block" id="enjoyment">Enjoyment</button>
+		<button type="button" class="list-group-item list-group-item-action btn-block" id="sadness">Sadness</button>
+		<button type="button" class="list-group-item list-group-item-action btn-block" id="fear">Fear</button>
+		<button type="button" class="list-group-item list-group-item-action btn-block" id="anger">Anger</button>
+		<button type="button" class="list-group-item list-group-item-action btn-block" id="disgust">Disgust</button>
+	</div>
+
 </body>
 </html>
