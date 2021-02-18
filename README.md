@@ -1,1 +1,1 @@
-# [Link to Heroku app](https://nessitron.herokuapp.com/)
+# [Link to NESSITRON on Heroku](https://nessitron.herokuapp.com/)
