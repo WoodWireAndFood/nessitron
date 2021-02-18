@@ -12,6 +12,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "buffer-crc32": "^0.2.13",
     "express": "3.x",
     "express3-handlebars": "*",
     "mongodb": "*",
