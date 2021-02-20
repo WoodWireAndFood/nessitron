@@ -1,8 +1,8 @@
 
 /*
- * GET home page.
+ * GET settings page.
  */
 
 exports.view = function(req, res){
-  res.render('settings');
+  res.render('settings'); // settings here refers to views/settings.handlebars
 };

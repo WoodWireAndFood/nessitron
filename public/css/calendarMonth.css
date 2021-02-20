@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+body {
+  /*background-color:#282423;*/
+}
+
+.calendarBox {
+  /*width:315px; AQUI*/
+  /*width: 100%;   This might actually be something neat for week view*/
+  width: 734px;
+  background:#332f2e; 
+  border-radius:45px; 
+  overflow:hidden; 
+  display:block; 
+  margin-bottom:10px; 
+  box-shadow:0 0 10px #201d1c; 
+  margin:0 auto; 
+  margin-top:100px;
+}
+
+.calendarFormat {
+  padding:10px 10px 20px 10px; 
+  box-sizing:border-box!important; 
+  /*background:#749d9e; */
+  /*background: -webkit-linear-gradient(#749d9e, #b3a68b)!important; */
+  /*background: -o-linear-gradient(#749d9e, #b3a68b)!important; */
+  /*background: -moz-linear-gradient(#749d9e, #b3a68b)!important; */
+  /*background: linear-gradient(#749d9e, #b3a68b)!important;*/
+  /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+background: rgb(200,117,135);
+background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 50%, rgba(254,193,150,1) 100%);
+}
+
+.monthLabel {
+  font:28px 'Roboto'; 
+  font-weight:700; 
+  /*color:#f7f3eb; */
+  color: white;
+  display:block; 
+  margin:0px 0 10px 0; 
+  /*text-transform:uppercase; */
+  text-align:center; 
+  letter-spacing:2px;
+}
+
+.calendarFormat span {
+  font:26px 'Roboto'; 
+  font-weight:400; 
+  /*color:#f7f3eb; */
+  color: black;
+  text-align:center; 
+  width:102px; 
+  height:62px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:50px;
+
+  /*background-color: #28E1A1;*/
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+
+  /*vertical-align: middle;*/
+
+
+}
+
+/*.jzdcal .jzdb:before {*/
+  /*opacity:0.2; */
+  /*content:'O';*/
+/*}*/
+.dateBlank{
+  opacity:0.3;
+}
+.dayLabel{
+  opacity:0.7;
+}
+
+
+
+/*span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:#282423; 
+  border:1px solid #f7f3eb; 
+  color:#f7f3eb; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}*/

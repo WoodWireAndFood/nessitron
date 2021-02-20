@@ -1,44 +1,90 @@
+/* TODO: CSS that looks like a sober person was responsible 
+: get the emotion buttons under how are you feeling to show up more centered if dealing with mobile screen sizes*/
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+body{
+  background-color: #E8CEBF;
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
 .navbar {
   width: 100%;
   background-color: #555;
   overflow: auto;
+
+  font-family: "Roboto";
+  border: none;
 }
 
-/* Navigation links */
+.emotion {
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  font-size: 30px;
+  border-radius: 6px;
+}
+.emotionListItem {
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  font-size: 30px;
+  border-radius: 6px;
+  background-color: #f8f1ec;
+}
+.emotionsBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .navbar a {
   float: left;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
+  width: 25%; 
+  text-align: center; 
 }
 
-/* Add a background color on mouse-over */
+
 .navbar a:hover {
   background-color: #696969;
 }
 
-/* Style the current/active link */
+
 .navbar a.active {
   /*background-color: 	#2F4F4F;*/
-  background-color: #242526;
+  /*background-color: #242526;*/
+  background-color: #808080;
 }
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+/*If less than 500 pixel width, mush nav into open faced drop down menu */
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    text-align: left; 
   }
 }
 .calbar {
   width: 100%;
   background-color: #555;
   overflow: auto;
+
+  font-family: "Roboto";
 }
 .calbar a {
   float: left;
@@ -46,45 +92,110 @@
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
+  width: 33.33%; 
+  text-align: center; 
 }
 
-/* Add a background color on mouse-over */
+
 .calbar a:hover {
   background-color: #696969;
 }
 
-/* Style the current/active link */
 .calbar a.active {
   /*background-color: 	#2F4F4F;*/
-  background-color: #242526;
+  background-color: #808080;
 }
+.saveordiscard {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+
+  font-family: "Roboto";
+  position:absolute;
+   bottom:.5%;
+   width:100%;
+}
+.saveordiscard a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 50%; 
+  text-align: center; 
+}
+
+
+.saveordiscard a:hover {
+  background-color: #696969;
+}
+
+.saveordiscard a.active {
+  /*background-color:   #2F4F4F;*/
+  background-color: #808080;
+}
+
 
 h1  {
 	text-align: center;
 }
+h3  {
+  text-align: center;
+}
+#enjoyment{
+  background-color: #85BAA1;
+  border: 2px solid #E8CEBF;
+  border-radius: 6px;
+}
+/* MIGHT BE EASIER TO JUST HAVE ALL THE COLORS THROUGH A CSS CLASS */
+#sadness{
+  background-color: #98C1D9;
+  border: 2px solid #E8CEBF;
+  border-radius: 6px;
+}
+#fear{
+  background-color: #E0FBFC;
+  border: 2px solid #E8CEBF;
+  border-radius: 6px;
+}
+#anger{
+  background-color: #EE6C4D;
+  border: 2px solid #E8CEBF;
+  border-radius: 6px;
+}
+#disgust{
+  background-color: #DBF4A7;
+  border: 2px solid #E8CEBF;
+  border-radius: 6px;
+}
+
 #enjoyment:hover{
 	/*background-color: #9DC183;*/
-  background-color: #696969;
+  border: 2px solid black;
+  border-radius: 6px;
 
 }
 #sadness:hover{
+    border: 2px solid black;
+  border-radius: 6px;
 	/*background-color: #CD5C5C;*/
-  background-color: #696969;
 }
 #fear:hover{
+    border: 2px solid black;
+  border-radius: 6px;
 	/*background-color: #F8E473;*/
-  background-color: #696969;
 }
 #anger:hover{
+    border: 2px solid black;
+  border-radius: 6px;
 	/*background-color: #598BAF;*/
-  background-color: #696969;
 }
 #disgust:hover{
+    border: 2px solid black;
+  border-radius: 6px;
 	/*background-color: #9966CB;*/
-  background-color: #696969;
 }
+
 .calendar {
 	height: 75%;
 	width: 100%;
@@ -92,8 +203,24 @@ h1  {
 .navButton{
 	background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     color: white;
+}
+.navbar a{
+  border: 10px solid #E8CEBF;
+
+}
+.saveordiscard a{
+  border: 10px solid #E8CEBF;
+}
+.calbar a{
+  border: 10px solid #E8CEBF;
+}
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
 }

@@ -1,3 +1,8 @@
+<!-- get rid of year, either do week/month or day/week/month
+create fake login
+custom emotion
+
+-->
 <html>
 <head>
 	<title>Nessitron</title>
@@ -11,20 +16,23 @@
 
 
 <div class="navbar">
-  <a class="active" href="#"><button class="navButton" disabled>Add Emotion</button></a>
-  <a href="calendar"><button class="navButton">Calendar</button></a>
+  <a class="active"><button class="navButton" disabled>Add Emotion</button></a>
+  <a href="calendarMonth"><button class="navButton">Calendar</button></a>
   <a href="journal"><button class="navButton">Journal</button></a>
   <a href="settings"><button class="navButton">Settings</button></a>
 </div>
 	<br>
 	<h1>How are you feeling?</h1>
 
+
+	<div class="text-center emotionsBox">
 	<div class="list-group">
-		<button type="button" class="list-group-item list-group-item-action btn-block" id="enjoyment">Enjoyment</button>
-		<button type="button" class="list-group-item list-group-item-action btn-block" id="sadness">Sadness</button>
-		<button type="button" class="list-group-item list-group-item-action btn-block" id="fear">Fear</button>
-		<button type="button" class="list-group-item list-group-item-action btn-block" id="anger">Anger</button>
-		<button type="button" class="list-group-item list-group-item-action btn-block" id="disgust">Disgust</button>
+		<a href="enjoyment" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="enjoyment">Enjoyment</button></a>
+		<a href="sadness" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="sadness">Sadness</button></a>
+		<a href="fear" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="fear">Fear</button></a>
+		<a href="anger" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="anger">Anger</button></a>
+		<a href="disgust" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="disgust">Disgust</button></a>
+	</div>
 	</div>
 
 </body>

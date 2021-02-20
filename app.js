@@ -3,17 +3,28 @@
  * Module dependencies.
  */
 
+
+//Probably don't change these
 var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+//Add Routes Here (its a .js file)
 var index = require('./routes/index');
-var calendar = require('./routes/calendar');
+var calendarDay = require('./routes/calendarDay');
+var calendarMonth = require('./routes/calendarMonth');	
+var calendarYear = require('./routes/calendarYear');
 var journal = require('./routes/journal');
 var settings = require('./routes/settings');
-// Example route
-// var user = require('./routes/user');
+var enjoyment = require('./routes/enjoyment');
+var sadness = require('./routes/sadness');
+var fear = require('./routes/fear');
+var anger = require('./routes/anger');
+var disgust = require('./routes/disgust');
+var savejournaldiscard = require('./routes/savejournaldiscard');
+
+// Begin code I hope doesn't matter
 
 var app = express();
 
@@ -36,14 +47,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+// End code I hope doesn't matter
 
+//Add app.get call 
 app.get('/', index.view);
-app.get('/calendar', calendar.view);
+app.get('/calendarDay', calendarDay.view);
+app.get('/calendarMonth', calendarMonth.view);
+app.get('/calendarYear', calendarYear.view);
 app.get('/journal', journal.view);
 app.get('/settings', settings.view);
-// Example route
-// app.get('/users', user.list);
+app.get('/enjoyment', enjoyment.view);
+app.get('/sadness', sadness.view);
+app.get('/fear', fear.view);
+app.get('/anger', anger.view);
+app.get('/disgust', disgust.view);
+app.get('/savejournaldiscard', savejournaldiscard.view);
 
+//This looks important, don't change it?
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

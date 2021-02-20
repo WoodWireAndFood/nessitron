@@ -1,7 +1,8 @@
 <html>
 <head>
 	<title>Nessitron</title>
-
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/nessitron.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 
@@ -13,13 +14,36 @@
 
 <div class="navbar">
   <a href="/"><button class="navButton">Add Emotion</button></a>
-  <a href="calendar"><button class="navButton">Calendar</button></a>
-  <a class="active" href="#"><button class="navButton">Journal</button></a>
+  <a href="calendarMonth"><button class="navButton">Calendar</button></a>
+  <a class="active"><button class="navButton" disabled>Journal</button></a>
   <a href="settings"><button class="navButton">Settings</button></a>
 </div>
-
 <h1>Journal</h1>
+<br>
 
+<div class="list-group" id="journals">
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h2 class="mb-1" style="margin-top: 5px;" id="userDate">Date go here</h2>
+      <h4 class="mb-1" id="userFeeling">Feeling go here</h2>
+    </div>
+    <p class="mb-1" id="userJournal">User text input here</p>
+  </a>
+  <!--
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h2 class="mb-1" style="margin-top: 5px;">Date go here</h2>
+      <h4 class="mb-1">Feeling go here</h2>
+    </div>
+    <p class="mb-1">User text input here</p>
+  </a>  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h2 class="mb-1" style="margin-top: 5px;">Date go here</h2>
+      <h4 class="mb-1">Feeling go here</h2>
+    </div>
+    <p class="mb-1">User text input here</p>
+  </a> -->
+</div>
 
 
 </body>
