@@ -28,14 +28,14 @@ a.nostyle:visited {
 .emotion {
   font-family: "Roboto";
   color: rgba(0, 0, 0, 0.9);
-  font-weight: 800;
+  font-weight: 400;
   font-size: 30px;
   border-radius: 6px;
 }
 .emotionListItem {
   font-family: "Roboto";
   color: rgba(0, 0, 0, 0.9);
-  font-weight: 800;
+  font-weight: 400;
   font-size: 30px;
   border-radius: 6px;
   background-color: #f8f1ec;
@@ -135,64 +135,65 @@ a.nostyle:visited {
   background-color: #808080;
 }
 
-
 h1  {
 	text-align: center;
 }
 h3  {
   text-align: center;
 }
-#enjoyment{
-  background-color: #85BAA1;
+
+.emotion {
   border: 2px solid #E8CEBF;
   border-radius: 6px;
 }
+
 /* MIGHT BE EASIER TO JUST HAVE ALL THE COLORS THROUGH A CSS CLASS */
+#enjoyment{
+  background-color: #85BAA1;
+}
 #sadness{
   background-color: #98C1D9;
-  border: 2px solid #E8CEBF;
-  border-radius: 6px;
 }
 #fear{
   background-color: #E0FBFC;
-  border: 2px solid #E8CEBF;
-  border-radius: 6px;
 }
 #anger{
   background-color: #EE6C4D;
-  border: 2px solid #E8CEBF;
-  border-radius: 6px;
 }
 #disgust{
   background-color: #DBF4A7;
-  border: 2px solid #E8CEBF;
-  border-radius: 6px;
+
 }
 
 #enjoyment:hover{
 	/*background-color: #9DC183;*/
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 6px;
+  background-color: #639b81;
 
 }
 #sadness:hover{
-    border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 6px;
+  background-color: #81adc6;
 	/*background-color: #CD5C5C;*/
 }
 #fear:hover{
-    border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 6px;
+  background-color: #c8e3e4;
 	/*background-color: #F8E473;*/
 }
 #anger:hover{
-    border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 6px;
+  background-color: #d76042;
 	/*background-color: #598BAF;*/
 }
 #disgust:hover{
-    border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 6px;
+  background-color: #cbe399;
 	/*background-color: #9966CB;*/
 }
 
@@ -207,6 +208,10 @@ h3  {
     padding: 0;
     cursor: pointer;
     color: white;
+}
+
+.navButton #addEmotion {
+  background-image:url("../media/plus_icon.png");
 }
 .navbar a{
   border: 10px solid #E8CEBF;

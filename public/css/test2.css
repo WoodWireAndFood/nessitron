@@ -1,4 +1,4 @@
-// Colors used
+/* // Colors used */
 :root {
   --teal-050: #effcf6;
   --teal-100: #c6f7e2;
@@ -45,21 +45,21 @@ main {
   border-radius: 8px;
 }
 
-// For the month
+/* // For the month */
 .month-indicator {
   color: var(--blue-grey-700);
   text-align: center;
   font-weight: 500;
 }
 
-// CSS grid used for the dates
+/* // CSS grid used for the dates */
 .day-of-week,
 .date-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
-// Styles for the weekday/weekend header
+/* // Styles for the weekday/weekend header */
 .day-of-week {
   margin-top: 1.25em;
 }
@@ -83,7 +83,7 @@ main {
   grid-column: 6;
 }
 
-// Style for each day
+/* // Style for each day */
 .date-grid button {
   position: relative;
   border: 0;
