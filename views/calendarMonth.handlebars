@@ -7,16 +7,17 @@
 
 	<link rel="stylesheet" href="/css/nessitron.css">
   <link rel="stylesheet" href="/css/calendarMonth.css">
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 
 
 <div class="navbar">
-  <a  href="/"><button class="navButton">Add Emotion</button></a>
-  <a class="active"><button class="navButton" disabled>Calendar</button></a>
-  <a href="journal"><button class="navButton">Journal</button></a>
-  <a href="settings"><button class="navButton">Settings</button></a>
+  <a  href="/"><button class="navButton"><i class="fas fa-plus"></i> Add Emotion</button></a>
+  <a class="active"><button class="navButton" disabled><i class="far fa-calendar-alt"></i> Calendar</button></a>
+  <a href="journal"><button class="navButton"><i class="far fa-file-alt"></i> Journal</button></a>
+  <a href="settings"><button class="navButton"><i class="fas fa-cog"></i> Settings</button></a>
 </div>
 <div class="calbar">
   <a href="calendarDay"><button class="navButton">Week</button></a> <!--it was at this point he realized calendarDay would've been better as calendarWeek, but refactoring websites if for communists-->
