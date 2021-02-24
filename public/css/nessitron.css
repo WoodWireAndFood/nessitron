@@ -162,7 +162,6 @@ h3  {
 }
 #disgust{
   background-color: #DBF4A7;
-
 }
 
 #enjoyment:hover{
@@ -197,6 +196,11 @@ h3  {
 	/*background-color: #9966CB;*/
 }
 
+/* TODO: change background color of each page to be color of emotion */
+/* .enjoyment {
+  background-color: #85BAA1;
+} */
+
 .calendar {
 	height: 75%;
 	width: 100%;
@@ -210,9 +214,6 @@ h3  {
     color: white;
 }
 
-.navButton #addEmotion {
-  background-image:url("../media/plus_icon.png");
-}
 .navbar a{
   border: 10px solid #E8CEBF;
 
