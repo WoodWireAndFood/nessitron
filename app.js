@@ -11,7 +11,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 //Add Routes Here (its a .js file)
-var index = require('./routes/index');
+var home = require('./routes/home');
 var login = require('./routes/login');
 var calendarDay = require('./routes/calendarDay');
 var calendarMonth = require('./routes/calendarMonth');	
@@ -51,7 +51,8 @@ if ('development' == app.get('env')) {
 // End code I hope doesn't matter
 
 //Add app.get call 
-app.get('/', index.view);
+app.get('/home', home.view);
+app.get('/', login.view);
 app.get('/login', login.view);
 app.get('/calendarDay', calendarDay.view);
 app.get('/calendarMonth', calendarMonth.view);
