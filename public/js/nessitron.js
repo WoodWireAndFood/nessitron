@@ -11,9 +11,16 @@ function initializePage() {
     let data = sessionStorage.getItem('feeling');
     $('.usersEmotion').text(data);
     let journalData = JSON.parse(sessionStorage.getItem('journalArray')); // actually gettings this to append into things neatly per journal entry will take actual googling time, or some lazy free db and for each loop
-    $('#userDate').text(journalData[0]);
-    $('#userFeeling').text(journalData[1]);
-    $('#userJournal').text(journalData[2]);
+    if(journalData){
+        $('#userDate').text(journalData[0]);
+        $('#userFeeling').text(journalData[1]);
+        $('#userJournal').text(journalData[2]);
+    } 
+    else{
+        $('#userDate').text("Date of Entry will appear here");
+        $('#userFeeling').text("Feeling of Entry will appear here");
+        $('#userJournal').text("JournalText of Entry will appear here");    
+    }
 
 
 
