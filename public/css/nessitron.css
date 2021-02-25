@@ -148,19 +148,19 @@ h3  {
 }
 
 /* MIGHT BE EASIER TO JUST HAVE ALL THE COLORS THROUGH A CSS CLASS */
-#enjoyment{
+#enjoyment, .enjoyment{
   background-color: #85BAA1;
 }
-#sadness{
+#sadness, .sadness{
   background-color: #98C1D9;
 }
-#fear{
+#fear, .fear{
   background-color: #E0FBFC;
 }
-#anger{
+#anger, .anger{
   background-color: #EE6C4D;
 }
-#disgust{
+#disgust, .disgust, .disgustnav a{
   background-color: #DBF4A7;
 }
 
@@ -199,7 +199,23 @@ h3  {
 /* TODO: change background color of each page to be color of emotion */
 /* .enjoyment {
   background-color: #85BAA1;
-} */
+}
+
+.sadness {
+  background-color: ;
+}
+
+.fear {
+  background-color: ;
+}
+
+.anger {
+  background-color: ;
+}
+
+.disgust {
+  background-color: ; */
+/* } */
 
 .calendar {
 	height: 75%;
