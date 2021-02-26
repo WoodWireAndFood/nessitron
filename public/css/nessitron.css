@@ -246,7 +246,7 @@ textarea {
   /* font-family: "Open Sans"; */
   position:absolute;
   left: 10%;
-  bottom:20%;
+  /* bottom:20%; */
   width:80%;
 }
 .saveordiscard a {
