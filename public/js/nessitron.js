@@ -9,6 +9,7 @@ function initializePage() {
     $('.emotionListItem').click(feelingClick);
     $('#saveButton').click(saveClick);
     let data = sessionStorage.getItem('feeling');
+    let file = require('pushit.push');
     $('.usersEmotion').text(data);
     let journalData = JSON.parse(sessionStorage.getItem('journalArray')); // actually gettings this to append into things neatly per journal entry will take actual googling time, or some lazy free db and for each loop
     if(journalData){

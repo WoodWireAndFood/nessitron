@@ -13,6 +13,7 @@ var handlebars = require('express3-handlebars')
 //Add Routes Here (its a .js file)
 var home = require('./routes/home');
 var login = require('./routes/login');
+var loginsuccess = require('./routes/loginsuccess');
 var calendarDay = require('./routes/calendarDay');
 var calendarMonth = require('./routes/calendarMonth');	
 var calendarYear = require('./routes/calendarYear');
@@ -54,6 +55,7 @@ if ('development' == app.get('env')) {
 app.get('/home', home.view);
 app.get('/', login.view);
 app.get('/login', login.view);
+app.get('/authSucc', loginsuccess.writeUser);
 app.get('/calendarDay', calendarDay.view);
 app.get('/calendarMonth', calendarMonth.view);
 app.get('/calendarYear', calendarYear.view);
