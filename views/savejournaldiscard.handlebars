@@ -10,25 +10,27 @@
 	
 
 </head>
-<body>
-<div class="navbar">
-  <a class="active"><button class="navButton" disabled><i class="fas fa-plus"></i> Add Emotion</button></a>
-  <a href="calendarMonth"><button class="navButton"><i class="far fa-calendar-alt"></i> Calendar</button></a>
-  <a href="journal"><button class="navButton"><i class="far fa-file-alt"></i> Journal</button></a>
-  <a href="settings"><button class="navButton"><i class="fas fa-cog"></i> Settings</button></a>
-</div>
-	<br>
-	<h1 class="usersEmotion">Error</h1>
+	<br> <br> <br> <br> <br> <br>
+	<h1 class="usersEmotion">Error</h1> <br>
 	<h3>Date of Entry: <span id="date">load error</span></h3>
-	<h3>Time of Entry: <span id="time">load error</span></h3>
-<textarea placeholder="Journal about your feelings here if you'd like." cols="50" rows="10" id="journalEntryBox">
-</textarea>
+	<h3>Time of Entry: <span id="time">load error</span></h3> <br>
+	<br> <br>
+		<textarea placeholder="Journal about your feelings here if you'd like." cols="38" rows="10" id="journalEntryBox">
+		</textarea>
+		<div class="wrapper">
+			<div class="saveordiscard">
+				<a href="calendarMonth" id="saveButton"><button class="navButton saveordiscardbutton" >Save</button></a> 
+				<a href="calendarMonth" ><button class="navButton saveordiscardbutton">Discard</button></a>
+			</div>
+		</div>
 
-
-<div class="saveordiscard">
-  <a href="calendarMonth" id="saveButton"><button class="navButton saveordiscardbutton" >Save</button></a> 
-  <a href="calendarMonth" ><button class="navButton saveordiscardbutton">Discard</button></a>
-</div>
+	<div class="navbar">
+		<a href="home"><button class="navButton"><i class="fas fa-plus fa-3x"></i><br> Add Emotion</button></a>
+		<a href="calendarMonth"><button class="navButton"><i class="far fa-calendar-alt fa-3x"></i><br> Calendar</button></a>
+		<a class="active"><button class="navButton" disabled><i class="far fa-file-alt fa-3x"></i><br> Journal</button></a>
+		<a href="settings"><button class="navButton"><i class="fas fa-cog fa-3x"></i><br> Settings</button></a>
+	</div>
+<body>
 <script>
 var today = new Date();
 var date = (today.getMonth()+1)+'-'+today.getDate();
