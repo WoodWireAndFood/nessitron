@@ -59,6 +59,26 @@ a.nostyle:visited {
   color: white;
 }
 
+.logoutButton{
+  /* font-family: "Roboto"; */
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  font-size: 60px;
+  /* border-radius: 6px; */
+  margin: 18px;
+  /* border: 2px solid #E8CEBF; */
+  /* border-radius: 50px; */
+  width: 100%
+}
+
+.settingsBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .emotion {
   /* font-family: "Roboto"; */
   color: rgba(0, 0, 0, 0.9);
