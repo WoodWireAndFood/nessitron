@@ -76,6 +76,10 @@ a.nostyle:visited {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .emotionListItem {
@@ -220,10 +224,9 @@ textarea {
 
   /* font-family: "Roboto"; */
   /* font-family: "Open Sans"; */
-  font-family: 'Courier New', monospace;
   position:absolute;
   left: 10%;
-  bottom:35%;
+  bottom:20%;
   width:80%;
 }
 .saveordiscard a {
