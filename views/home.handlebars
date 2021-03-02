@@ -18,16 +18,12 @@ custom emotion
 	<br><br><br><br><br><br><br>
 	<h1>How are you <br> feeling now {{username}}?</h1>
 
+	<div id="navbar2"></div>
 		<div class="text-center emotionsBox">
 			<div class="list-group">
 				{{#each emotionButtons}}
 					{{{emoButton}}}
 				{{/each}}
-				{{!-- <a href="enjoyment" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="enjoyment"><i class="far fa-smile-beam"></i> Enjoyment</button></a>
-				<a href="sadness" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="sadness"><i class="far fa-sad-tear"></i> Sadness</button></a>
-				<a href="fear" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="fear"><i class="far fa-flushed"></i> Fear</button></a>
-				<a href="anger" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="anger"><i class="far fa-angry"></i> Anger</button></a>
-				<a href="disgust" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotion" id="disgust"><i class="far fa-grin-tongue-squint"></i> Disgust</button></a> --}}
 			</div>
 		</div>
 		<br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  -->
@@ -36,10 +32,6 @@ custom emotion
 		{{#each navbarButtons}}
 			{{{aTag}}}{{{buttonTag}}}{{{icon}}}<br>{{label}}</button></a>
 		{{/each}}
-		{{!-- <a class="active"><button class="navButton" id="addEmotion" disabled><i class="fas fa-plus fa-3x"></i><br> Add Emotion</button></a>
-		<a href="calendarMonth"><button class="navButton"><i class="far fa-calendar-alt fa-3x"></i><br> Calendar</button></a>
-		<a href="journal"><button class="navButton"><i class="far fa-file-alt fa-3x"></i><br> Journal</button></a>
-		<a href="settings"><button class="navButton"><i class="fas fa-cog fa-3x"></i><br> Settings</button></a> --}}
 	</div>
 
 </body>
