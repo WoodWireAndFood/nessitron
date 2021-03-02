@@ -35,11 +35,10 @@
 	</div>
 		<br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  -->
 
-		<div class="navbar">
-			<a class="active"><button class="navButton" id="addEmotion" disabled><i class="fas fa-plus fa-3x"></i><br> Add Emotion</button></a>
-			<a href="calendarMonth"><button class="navButton"><i class="far fa-calendar-alt fa-3x"></i><br> Calendar</button></a>
-			<a href="journal"><button class="navButton"><i class="far fa-file-alt fa-3x"></i><br> Journal</button></a>
-			<a href="settings"><button class="navButton"><i class="fas fa-cog fa-3x"></i><br> Settings</button></a>
-		</div>
+	<div class="navbar">
+		{{#each navbarButtons}}
+			{{{aTag}}}{{{buttonTag}}}{{{icon}}}<br>{{label}}</button></a>
+		{{/each}}
+	</div>
 </body>
 </html>
