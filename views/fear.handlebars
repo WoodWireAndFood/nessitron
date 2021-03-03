@@ -5,34 +5,32 @@
 	<script src="js/nessitron.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/css/nessitron.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<link rel="stylesheet" href="/css/new_nessitron.css">
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="fear">
-	<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-	<h1>Fear</h1><br><br> <br>
-	<div class="text-center emotionsBox"> <!--using 2 divs for 3 classes is the most I've ever seen someone brandish their imposter syndrome please sort this out-->
-		<div class="list-group">
-			<!-- THIS SHOULDN'T GO TO CALENDAR IT SHOULD GO TO THE SAVE/JOURNAL/DISCARD SCREEN but that can be sorted out another time -->
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Worried</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Doubtful</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Nervous</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Anxious</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Terrified</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Panicked</button></a>
-			{{!-- <a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Horrified</button></a> --}}
-			{{!-- <a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Desperate</button></a> --}}
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Confused</button></a>
-			<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Stressed</button></a>
+	<div class="container">
+		<h1>Fear</h1>
+		<div class="text-center emotionsBox emotionListItemBox"> <!--using 2 divs for 3 classes is the most I've ever seen someone brandish their imposter syndrome please sort this out-->
+			<div class="list-group">
+				<!-- THIS SHOULDN'T GO TO CALENDAR IT SHOULD GO TO THE SAVE/JOURNAL/DISCARD SCREEN but that can be sorted out another time -->
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Worried</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Doubtful</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Nervous</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Anxious</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Terrified</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Panicked</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Horrified</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Desperate</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Confused</button></a>
+				<a href="savejournaldiscard" class="nostyle"><button type="button" class="list-group-item list-group-item-action btn-block emotionListItem">Stressed</button></a>
+			</div>
 		</div>
 	</div>
-		<br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  -->
-	
+			
 	<div class="navbar">
 		{{#each navbarButtons}}
 			{{{aTag}}}{{{buttonTag}}}{{{icon}}}<br>{{label}}</button></a>

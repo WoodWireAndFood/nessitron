@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+body{
+  background: #d2d2d2;
+  background: linear-gradient(to bottom right, #aecbff, #df7474);
+
+  /* font-family: 'Courier New', monospace; */
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Nunito';
+}
+/* TODO: do we need this? */
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+h1 {
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Nunito';
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    padding-top: 10%;
+  }
+  .navbar {
+    margin-bottom: 7.5%;
+  }
+}
+
+.login-form {
+  padding-top: 20%;
+}
+
+.emotionsBox {
+  margin: auto;
+  border: none;
+}
+.emotion, .emotionListItem {
+  background: none;
+  color: black;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 20px;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.emotion#enjoyment {
+  /* color: #85BAA1; */
+  background-color: #85BAA1;
+  border: 3px solid #85BAA1;
+}
+.emotion#sadness {
+  background-color: #5bb3e6;
+  border: 3px solid #5bb3e6;
+}
+.emotion#fear {
+  background-color: #E0FBFC;
+  background-color: #E0FBFC;
+  /* border: 3px solid #E0FBFC; */
+}
+.emotion#anger {
+  background-color: #EE6C4D;
+  border: 3px solid #EE6C4D;
+}
+.emotion#disgust {
+  background-color: #DBF4A7;
+  border: 3px solid #DBF4A7;
+}
+
+.emotionListItem {
+  background-color: white;
+}
+.emotionListItemBox {
+  width: 75%;
+  height: 60%;
+  overflow-y: scroll;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 5%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: linear-gradient(to bottom right, #aecbff, #df7474);
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  font-family: 'Nunito';
+}
+.navButton {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 7px;
+  font-size: 10px;
+  cursor: pointer;
+  color: black;
+}
+.navbar a.active {
+  background-color: rgb(228, 224, 224);
+}

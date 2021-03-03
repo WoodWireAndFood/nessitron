@@ -9,24 +9,28 @@ custom emotion
 
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/css/nessitron.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="/css/new_nessitron.css">
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	{{!-- <h2 class="page"><i class="fas fa-home"></i> Home</h1> --}}
-	<br><br><br><br><br><br><br>
-	<h1>How are you <br> feeling now {{username}}?</h1>
+	{{!-- <br><br><br><br><br><br><br> --}}
+	<div class="container">
+		<h1>How are you feeling now {{username}}?</h1>
 
-	<div id="navbar2"></div>
-		<div class="text-center emotionsBox">
-			<div class="list-group">
-				{{#each emotionButtons}}
-					{{{emoButton}}}
-				{{/each}}
+		<div id="navbar2"></div>
+			<div class="text-center emotionsBox">
+				<div class="list-group">
+					{{#each emotionButtons}}
+						{{{emoButton}}}
+					{{/each}}
+				</div>
 			</div>
-		</div>
-		<br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  -->
+	</div>
+		{{!-- <br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  --> --}}
 
 	<div class="navbar">
 		{{#each navbarButtons}}

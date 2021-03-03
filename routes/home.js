@@ -19,6 +19,7 @@ exports.view = function(req, res){
       "aTag": "<a href=\"calendarMonth\">",
       "buttonTag": "<button class=\"navButton\">",
       "icon": "<i class=\"far fa-calendar-alt fa-3x\"></i>",
+      // "label": "Calendar"
       "label": "Calendar"
     },
     {
