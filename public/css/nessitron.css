@@ -265,3 +265,6 @@ textarea {
   /*background-color:   #2F4F4F;*/
   background-color: #808080;
 }
+div .toOverride {
+  box-shadow: none !important;
+}
