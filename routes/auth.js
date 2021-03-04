@@ -2,7 +2,7 @@
  * Store logged in user info and go to home
  */
 
-exports.writeUser = function(req, res){
+exports.checkLogin = function(req, res){
     var jsonFilename = "users.json";
     var info = JSON.parse('{"loginMessage": "Invalid username or password. Please try again."}');
     var username = req.query.uname;
