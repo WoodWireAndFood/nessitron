@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Nessitron</title>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/new_nessitron.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="my-auto text-center">
+			<h1>Please create a username and password for Nessitron</h1>
+			<div class= "text-center">
+				<form class="login-form" action="createAccount">
+					<label for="uname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username:</label>
+					<input type="text" id="uname" name="uname"><br>
+                    <div id="unameExists">{{usernameExists}}</div>
+					<label for="pword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password: </label>
+					<input type="password" id="pword" name="pword"><br>
+					<label for="pword2">Re-enter password: </label>
+					<input type="password" id="pword2" name="pword2"><br>
+					<div id="pwMismatch"></div>
+					<input type="submit" value="Create Account">
+				</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
