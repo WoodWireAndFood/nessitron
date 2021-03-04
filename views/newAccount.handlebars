@@ -37,6 +37,10 @@
 			$("#pwMismatch").html('<p style="color:red">Passwords don\'t match. Try again.</p>');
 			return false;
 		}
+		else if (p1 == ""){
+			$("#pwMismatch").html('<p style="color:red">Passwords cannot be blank. Try again.</p>');
+			return false;
+		}
 		else {
 			return true;
 		}
