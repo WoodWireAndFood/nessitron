@@ -4,13 +4,12 @@
  */
 
 exports.view = function(req, res){
-  // res.cookie("username", "thisuser");
   // var fs = require('fs');
   // var raw = fs.readFileSync('user.json', 'utf8');
   // console.log(raw);
   // var info = JSON.parse(raw);
   var username = req.cookies.username;
-  if (typeof(username) == 'undefined') {
+  if (typeof(username) == 'undefined') { // Check for not logged in
     res.render('loginRedirect');
   }
   else{
