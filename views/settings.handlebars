@@ -5,25 +5,23 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="/css/nessitron.css">
+	{{!-- <link rel="stylesheet" href="/css/nessitron.css"> --}}
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/new_nessitron.css">
   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <br>
-  <br>
-  <br>
+  <div class="container">
+    <h1>Settings</h1>
 
-
-<br>
-<h1>Settings</h1>
-<br>
-
-<div class="text-center settingsBox">
-  <div class="list-group toOverride">
-    <a href="/"><button type="button" class="logoutButton">Logout</button></a>
+    <div class="text-center settingsBox">
+      <div class="list-group toOverride">
+        <a href="/"><button type="button" class="logoutButton">Logout</button></a>
+      </div>
+    </div>
   </div>
-</div>
 
 
   <div class="navbar">
@@ -31,5 +29,6 @@
 			{{{aTag}}}{{{buttonTag}}}{{{icon}}}<br>{{label}}</button></a>
 		{{/each}}
 	</div>
+
 </body>
 </html>
