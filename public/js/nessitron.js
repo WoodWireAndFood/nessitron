@@ -11,16 +11,30 @@ function initializePage() {
     let data = sessionStorage.getItem('feeling');
     $('.usersEmotion').text(data);
     let journalData = JSON.parse(sessionStorage.getItem('journalArray')); // actually gettings this to append into things neatly per journal entry will take actual googling time, or some lazy free db and for each loop
-    if(journalData){
-        $('#userDate').text(journalData[0]);
-        $('#userFeeling').text(journalData[1]);
-        $('#userJournal').text(journalData[2]);
-    } 
-    else{
-        $('#userDate').text("Date of Entry will appear here");
-        $('#userFeeling').text("Feeling of Entry will appear here");
-        $('#userJournal').text("JournalText of Entry will appear here");    
+    
+
+
+    if(window.location.pathname == '/journal'){
+        console.log("journal page");
+        if(journalData){
+                for(i = 0; i<journalData.length; i+=4)
+                {
+                var htmlBlock =     '<a href="#" class="list-group-item list-group-item-action" aria-current="true">' +
+                                    '<div class="d-flex w-100 justify-content-between">' +
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + journalData[i] +'</h2>'+
+                                    '<h4 class="mb-1" id="userFeeling">' + journalData[i+1] +'</h2>'+
+                                    '</div>'+
+                                    '<p class="mb-1" id="userJournal">' + journalData[i+3] +'</p>' + '</a>' + '<br>';
+                    $("#journals").append(htmlBlock);
+                }
+                 
+        } 
+        else{
+            alert("No journals found, go have feelings pls");
+        }
     }
+
+
 
     //Calendar Update
     if(window.location.pathname == '/calendarMonth') //Possibly the least ethical thing I've done outside of xbox live
@@ -91,7 +105,25 @@ function saveClick(e) {
     var today = new Date();
     var date = (today.getMonth()+1)+'-'+today.getDate();
     let feeling = sessionStorage.getItem('feeling');
+    let emotion = sessionStorage.getItem('emotion');
     var journalEntry = $('#journalEntryBox').val();
-    let completeEntry = [date, feeling, journalEntry];
-    sessionStorage.setItem('journalArray', JSON.stringify(completeEntry));
+    let completeEntry = [date, feeling, emotion, journalEntry];
+    // var priorRecords = sessionStorage.getItem('journalArray');
+    //let journalData = JSON.parse(sessionStorage.getItem('journalArray'));
+    let priorRecords = JSON.parse(sessionStorage.getItem('journalArray'));
+    // console.log(priorRecords);
+    if(priorRecords){
+        console.log("test1")
+        // priorRecords.push(date, feeling, emotion, journalEntry);
+        priorRecords.push(date);
+        priorRecords.push(feeling);
+        priorRecords.push(emotion);
+        priorRecords.push(journalEntry);
+    }
+    else{
+        console.log("test2")
+        priorRecords = [date, feeling, emotion, journalEntry];
+    }
+    // console.log(priorRecords);
+    sessionStorage.setItem('journalArray', JSON.stringify(priorRecords));
 }
