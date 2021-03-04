@@ -4,6 +4,7 @@
  */
 
 exports.view = function(req, res){
+  var username = req.cookies.username;
   var info = {};
   info.navbarButtons = [
     {
