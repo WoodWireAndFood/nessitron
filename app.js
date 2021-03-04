@@ -60,7 +60,7 @@ app.get('/', login.view);
 app.get('/login', login.view);
 app.get('/logout', logout.logout);
 app.get('/createAccount', createAccount.addUsername);
-app.get('/newAccount', );
+app.get('/newAccount', newAccount.view);
 app.get('/authSucc', loginsuccess.writeUser);
 app.get('/calendarDay', calendarDay.view);
 app.get('/calendarMonth', calendarMonth.view);
