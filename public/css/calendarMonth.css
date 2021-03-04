@@ -5,8 +5,6 @@ body {
 }
 
 .calendarBox {
-  /*width:315px; AQUI*/
-  /*width: 100%;   This might actually be something neat for week view*/
   width: 734px;
   background:#332f2e; 
   border-radius:45px; 
@@ -21,14 +19,8 @@ body {
 .calendarFormat {
   padding:10px 10px 20px 10px; 
   box-sizing:border-box!important; 
-  /*background:#749d9e; */
-  /*background: -webkit-linear-gradient(#749d9e, #b3a68b)!important; */
-  /*background: -o-linear-gradient(#749d9e, #b3a68b)!important; */
-  /*background: -moz-linear-gradient(#749d9e, #b3a68b)!important; */
-  /*background: linear-gradient(#749d9e, #b3a68b)!important;*/
-  /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
-background: rgb(200,117,135);
-background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 50%, rgba(254,193,150,1) 100%);
+  background: rgb(200,117,135);
+  background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 50%, rgba(254,193,150,1) 100%);
 }
 
 .monthLabel {
@@ -66,10 +58,7 @@ background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 5
 
 }
 
-/*.jzdcal .jzdb:before {*/
-  /*opacity:0.2; */
-  /*content:'O';*/
-/*}*/
+
 .dateBlank{
   opacity:0.3;
 }
@@ -77,20 +66,3 @@ background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 5
   opacity:0.7;
 }
 
-
-
-/*span[data-title]:hover:after, 
-div[data-title]:hover:after {
-  font:11px 'Roboto'; 
-  font-weight:400; 
-  content:attr(data-title); 
-  position:absolute; 
-  margin:0 0 100px; 
-  background:#282423; 
-  border:1px solid #f7f3eb; 
-  color:#f7f3eb; 
-  padding:5px; 
-  z-index:9999; 
-  min-width:150px; 
-  max-width:150px;
-}*/
