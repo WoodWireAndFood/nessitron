@@ -17,9 +17,11 @@
 			<div class="wrapper">
 				<textarea placeholder="Journal about your feelings here if you'd like." cols="38" rows="10" id="journalEntryBox"></textarea>
 				<div class="saveordiscard">
+					{{!-- <a href="journal"><button class="navButton saveordiscardbutton" id="saveButton">Save</button></a>
+					<a href="home"><button class="navButton saveordiscardbutton" id="discardButton">Discard</button></a> --}}
 					<a href="journal" id="saveButton"><button class="navButton saveordiscardbutton" >Save</button></a> 
 					<a href="home" id="discardButton"><button class="navButton saveordiscardbutton">Discard</button></a>
-				</div>
+				</div>				
 			</div>
 	</div>
 		{{!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  --> --}}
@@ -30,6 +32,7 @@
 		{{/each}}
 	</div>
 <body>
+	
 <script>
 var today = new Date();
 var date = (today.getMonth()+1)+'-'+today.getDate();

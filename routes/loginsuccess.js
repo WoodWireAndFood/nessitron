@@ -4,10 +4,6 @@
 
 exports.writeUser = function(req, res){
     var username = req.query.uname;
-    var toWrite = '{"username": "' + username + '" }';
-    console.log(toWrite);
-    var fs = require('fs');
-    var info = JSON.parse(toWrite);
-    fs.writeFile("user.json", JSON.stringify(info), 'utf8', function (){});
+    res.cookie("username", username);
     res.render('loginsuccess'); // loginsuccess here refers to views/loginsuccess.handlebars which is a straight redirect to home
   }

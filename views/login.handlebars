@@ -1,8 +1,3 @@
-<!-- get rid of year, either do week/month or day/week/month
-create fake login
-custom emotion
-
--->
 <html>
 <head>
 	<title>Nessitron</title>
@@ -22,8 +17,10 @@ custom emotion
 					<input type="text" id="uname" name="uname"><br>
 					<label for="pword">Password: </label>
 					<input type="password" id="pword" name="pword"><br>
+					<div id="badLogin">{{loginMessage}}</div>
 					<input type="submit" value="Login">
 				</form>
+				<h2><a href="newAccount">Click here to create a new account.</a></h2>
 		</div>
 	</div>
 </div>

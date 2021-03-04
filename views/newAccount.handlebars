@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Nessitron</title>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/new_nessitron.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="my-auto text-center">
+			<h1>Please create a username and password for Nessitron</h1>
+			<div class= "text-center">
+				<form name="creationForm" class="login-form" action="createAccount" onsubmit="return passwordsMatch()">
+					<label for="uname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username:</label>
+					<input type="text" id="uname" name="uname"><br>
+                    <div id="unameExists">{{usernameExists}}</div>
+					<label for="pword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password: </label>
+					<input type="password" id="pword" name="pword"><br>
+					<label for="pword2">Re-enter password: </label>
+					<input type="password" id="pword2" name="pword2"><br>
+					<div id="pwMismatch"></div>
+					<input type="submit" value="Create Account">
+				</form>
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+	function passwordsMatch() {
+		var p1 = document.forms["creationForm"]["pword"].value;
+		var p2 = document.forms["creationForm"]["pword2"].value;
+		if (p1 != p2) {
+			$("#pwMismatch").html('<p style="color:red">Passwords don\'t match. Try again.</p>');
+			return false;
+		}
+		else if (p1 == ""){
+			$("#pwMismatch").html('<p style="color:red">Passwords cannot be blank. Try again.</p>');
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+</script>
+</html>
