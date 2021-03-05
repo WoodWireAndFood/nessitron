@@ -19,7 +19,7 @@
 
     <div class="text-center settingsBox">
       <div class="list-group toOverride">
-        <a href="logout" class="nostyle"><button type="button" class="logoutButton signupbtn">Logout</button></a>
+        <a href="logout" class="nostyle" onclick="function ssclear(){sessionStorage.clear()};ssclear()"><button type="button" class="logoutButton signupbtn">Logout</button></a>
       </div>
     </div>
   </div>
@@ -33,3 +33,13 @@
 
 </body>
 </html>
+
+<!-- sessionStorage.clear();
+
+<a href="#" onClick="(
+  function() {
+    return false;
+  })();return false;">click here</a>
+
+
+  onclick="function ssclear(){sessionStorage.clear()};ssclear()" -->

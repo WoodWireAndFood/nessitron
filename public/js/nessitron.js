@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 function initializePage() {
 	console.log("init page called");
+    // console.log(document.cookie);
     $('.emotionListItem').click(feelingClick);
     $('#saveButton').click(saveClick);
     let data = sessionStorage.getItem('feeling');
@@ -16,6 +17,32 @@ function initializePage() {
 
     if(window.location.pathname == '/journal'){
         console.log("journal page");
+        var cText = getCookie("username");
+        // console.log(cText);
+        if(cText=="testuser1"){ //populating with garbage test data for users
+            console.log("testuser1 detected");
+            var htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
+                                    '<div class="d-flex w-100 justify-content-between">' +
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-2" +'</h2>'+
+                                    '<h4 class="mb-1" id="userFeeling">' + "Hopeless" +'</h2>'+
+                                    '</div>'+
+                                    '<p class="mb-1" id="userJournal">' + "Today I woke up, did homework, then went to sleep." +'</p>' + '</li>' + '<br>';
+            $("#journals").append(htmlBlock);
+            htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
+                                    '<div class="d-flex w-100 justify-content-between">' +
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-3" +'</h2>'+
+                                    '<h4 class="mb-1" id="userFeeling">' + "Happy" +'</h2>'+
+                                    '</div>'+
+                                    '<p class="mb-1" id="userJournal">' + "Dogs were finally declared better than cats" +'</p>' + '</li>' + '<br>';
+            $("#journals").append(htmlBlock);
+            htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
+                                    '<div class="d-flex w-100 justify-content-between">' +
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-4" +'</h2>'+
+                                    '<h4 class="mb-1" id="userFeeling">' + "Resigned" +'</h2>'+
+                                    '</div>'+
+                                    '<p class="mb-1" id="userJournal">' + "Today I woke up, did homework, then went to sleep." +'</p>' + '</li>' + '<br>';
+            $("#journals").append(htmlBlock);
+        }
         if(journalData){
                 for(i = 0; i<journalData.length; i+=4)
                 {
@@ -30,7 +57,7 @@ function initializePage() {
                  
         } 
         else{
-            alert("No journals found, go have feelings pls");
+            console.log("No journals found, go have feelings pls");
         }
     }
 
@@ -39,6 +66,7 @@ function initializePage() {
     //Calendar Update
     if(window.location.pathname == '/calendarMonth') //Possibly the least ethical thing I've done outside of xbox live
     {
+
         var currentDate = new Date();
         var currDay = currentDate.getDate();
         $( "span" ).each(function(  ) { //For every span
@@ -49,6 +77,11 @@ function initializePage() {
             else //if it doesn't, basically do nothing
                 var temp = 0;
         });
+        var cText = getCookie("username");
+        if (cText=="testuser1"){
+            $("#WOZ1").css('background-color', "#98C1D9")
+            $("#WOZ2").css('background-color', "#85BAA1")
+        }
         $( "span" ).each(function(  ) {
             if (journalData){
                 let emotionData = sessionStorage.getItem('emotion');
@@ -107,4 +140,21 @@ function saveClick(e) {
         priorRecords = [date, feeling, emotion, journalEntry];
     }
     sessionStorage.setItem('journalArray', JSON.stringify(priorRecords));
+}
+//STOLEN FROM W3SCHOOLS.COM 
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+        // console.log("returning cookie text");
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
