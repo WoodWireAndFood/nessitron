@@ -28,13 +28,17 @@ h1 {
 
 /* LOGIN PAGE */
 .login {
-  padding-top: 35%;
+  padding-top: 20%;
 }
 .login-form {
   padding-top: 5%;
   padding-bottom: 0%;
 }
-.login-form input, .signupbtn {
+.login-form input,
+.signupbtn,
+.createbtn,
+.signininput,
+.signinbtn {
   border-radius: 10px;
   border: none;
 }
@@ -48,11 +52,13 @@ text-align: center;
   font-weight: normal;
   margin-bottom: 2%;
 }
-.signinbtn, .signupbtn {
+.signinbtn,
+.signupbtn {
   padding: 1.5% 20%;
   margin-bottom: 0%;
 }
-.signinbtn {
+.signinbtn,
+.signininput {
   background-color: rgb(74, 74, 238);
   color: white;
 }
@@ -203,6 +209,7 @@ textarea {
   text-align: center;
   border-radius: 10px;
   border: none;
+  margin-top: 10%;
 }
 
 
@@ -242,13 +249,16 @@ textarea {
   }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 740px) {
   h1 {
     padding-top: 7%;
     font-size: 40px;
   }
   .navbar {
     margin-bottom: 7.5%;
+  }
+  .login {
+    padding-top: 35%;
   }
   .wrapper {
     padding-top: 10%;
