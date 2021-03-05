@@ -37,8 +37,8 @@ h1 {
 .login-form input,
 .signupbtn,
 .createbtn,
-.signininput,
-.signinbtn {
+.signinbtn
+  {
   border-radius: 10px;
   border: none;
 }
@@ -52,13 +52,11 @@ text-align: center;
   font-weight: normal;
   margin-bottom: 2%;
 }
-.signinbtn,
-.signupbtn {
+.signinbtn, .signupbtn {
   padding: 1.5% 20%;
   margin-bottom: 0%;
 }
-.signinbtn,
-.signininput {
+.signinbtn {
   background-color: rgb(74, 74, 238);
   color: white;
 }
@@ -223,10 +221,9 @@ textarea {
     width: 90%;
     left: 5%;
     min-height: auto;
-    
   }
   .navButton {
-    font-size: 5px;
+    font-size: 9px;
   }
   .emotion,
   .emotionListItem {

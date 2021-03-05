@@ -9,7 +9,7 @@ body {
   /* width: 734px; */
   width: 90%;
   background:#332f2e; 
-  border-radius:45px; 
+  border-radius:25px; 
   overflow:hidden; 
   display:block; 
   /* margin-bottom:10px;  */
@@ -17,7 +17,7 @@ body {
   box-shadow:0 0 10px #201d1c; 
   margin:0 auto; 
   /* margin-top:100px; */
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .calendarFormat {
@@ -34,14 +34,14 @@ body {
   /*color:#f7f3eb; */
   color: black;
   display: block; 
-  margin: 0px 0 10px 0; 
+  margin: 0px 0 10px 0px; 
   /*text-transform:uppercase; */
   text-align: center; 
   letter-spacing: 2px;
 }
 
 .calendarFormat span {
-  font: 23px 'Nunito';
+  font: 18.5px 'Nunito';
   font-weight: 400; 
   /*color:#f7f3eb; */
   color: black;
@@ -70,4 +70,10 @@ body {
 .dayNum,
 .dateBlank {
   height: 10%;
+}
+
+@media screen and (max-height: 600px) {
+  .dayLabel span {
+    font-size: 20px;
+  }
 }
