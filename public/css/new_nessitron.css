@@ -25,58 +25,43 @@ h1 {
   font-family: 'Nunito';
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    padding-top: 2%;
-    font-size: 30px;
-  }
-  .navbar {
-    margin-bottom: 7.5%;
-    width: 90%;
-  }
-  .wrapper {
-    padding-top: 20%;
-    text-align: center;
-    margin: auto;
-  }
-  #savebutton button,
-  #discardbutton button {
-    margin: 5%;
-    font-size: 15px;
-    width: 25%;
-    opacity: 60%;
-  }
+
+/* LOGIN PAGE */
+.login {
+  padding-top: 35%;
 }
-
-@media screen and (max-width: 800px) {
-  h1 {
-    padding-top: 7%;
-    font-size: 40px;
-  }
-
-  .navbar {
-    margin-bottom: 7.5%;
-  }
-
-  .wrapper {
-    padding-top: 10%;
-    text-align: center;
-    margin: auto;
-  }
-
-  #savebutton button,
-  #discardbutton button {
-    margin-top: 10%;
-    font-size: 15px;
-    width: 30%;
-    opacity: 60%;
-  }
-}
-
 .login-form {
-  padding-top: 20%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+.login-form input, .signupbtn {
+  border-radius: 10px;
+  border: none;
+}
+/* .login-form input text  */
+.login-section {
+text-align: center;
+  padding: 1% 10%;
+  /* padding-right: 10%; */
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 2%;
+}
+.signinbtn, .signupbtn {
+  padding: 1.5% 20%;
+  margin-bottom: 0%;
+}
+.signinbtn {
+  background-color: rgb(74, 74, 238);
+  color: white;
+}
+.createbtn {
+  margin-top: 5%;
+  width: 50%;
 }
 
+/* HOMESCREEN PAGE */
 .emotionsBox {
   margin: auto;
   border: none;
@@ -87,7 +72,7 @@ h1 {
   border-radius: 30px;
   margin: auto;
   margin-top: 20px;
-  width: 60%;
+  width: 70%;
   font-size: 20px;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -189,6 +174,26 @@ textarea {
   opacity: 60%;
 }
 
+
+/* JOURNAL */
+#userFeeling, #userJournal {
+  font-family: 'Nunito';
+}
+.journalsBox {
+  margin: auto;
+  border: none;
+}
+.journalListItemBox {
+  width: 90%;
+  /* TODO */
+  height: 50%; 
+  overflow-y: scroll;
+}
+.journalentry {
+  border-radius: 5px;
+}
+
+
 /* SETTINGS */
 .settingsBox {
   margin: auto;
@@ -198,4 +203,66 @@ textarea {
   text-align: center;
   border-radius: 10px;
   border: none;
+}
+
+
+@media screen and (max-height: 600px) {
+  h1 {
+    padding-top: 2%;
+    font-size: 30px;
+  }
+  .navbar {
+    margin-bottom: 0%;
+    width: 90%;
+    left: 5%;
+    min-height: auto;
+    
+  }
+  .navButton {
+    font-size: 5px;
+  }
+  .emotion,
+  .emotionListItem {
+    margin-top: 15px;
+  }
+  .wrapper {
+    padding-top: 20%;
+    text-align: center;
+    margin: auto;
+  }
+  #savebutton button,
+  #discardbutton button {
+    margin: 5%;
+    font-size: 15px;
+    width: 25%;
+    opacity: 60%;
+  }
+  .journalListItemBox {
+    height: 67%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  h1 {
+    padding-top: 7%;
+    font-size: 40px;
+  }
+  .navbar {
+    margin-bottom: 7.5%;
+  }
+  .wrapper {
+    padding-top: 10%;
+    text-align: center;
+    margin: auto;
+  }
+  #savebutton button,
+  #discardbutton button {
+    margin-top: 10%;
+    font-size: 15px;
+    width: 30%;
+    opacity: 60%;
+  }
+  .journalListItemBox {
+    height: 68%;
+  }
 }

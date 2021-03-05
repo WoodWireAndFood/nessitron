@@ -5,29 +5,24 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="/css/nessitron.css">
+	{{!-- <link rel="stylesheet" href="/css/nessitron.css"> --}}
   <link rel="stylesheet" href="/css/calendarMonth.css">
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/nessitron.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/new_nessitron.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
-
-<div class="calbar">
-  <a href="calendarDay"><button class="navButton">Week</button></a> <!--it was at this point he realized calendarDay would've been better as calendarWeek, but refactoring websites if for communists-->
-  <a class="active" href="calendarMonth"><button class="navButton" disabled>Month</button></a>
-  <a href="calendarYear"><button class="navButton">Year</button></a>
-</div>
-	<br><br><br>
-
 	<!-- <img class="calendar" src="https://i.ibb.co/LxmxtrJ/calendar.png"> -->
+  <div class="container">
 
-  <div class="calendarBox calendarFormat">
+    <div class="calendarBox calendarFormat">
 
-    <div class="monthLabel">March</div>
+      <div class="monthLabel">March</div>
       <span class="dayLabel">Su</span>
       <span class="dayLabel">Mo</span>
       <span class="dayLabel">Tu</span>
@@ -36,45 +31,44 @@
       <span class="dayLabel">Fr</span>
       <span class="dayLabel">Sa</span>
 
-
-
-<span class="dateBlank">31</span>
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>4</span>
-<span>5</span>
-<span>6</span>
-<span>7</span>
-<span>8</span>
-<span>9</span>
-<span>10</span>
-<span>11</span>
-<span>12</span>
-<span>13</span>
-<span>14</span>
-<span>15</span>
-<span>16</span>
-<span>17</span>
-<span>18</span>
-<span>19</span>
-<span>20</span>
-<span>21</span>
-<span>22</span>
-<span>23</span>
-<span>24</span>
-<span>25</span>
-<span>26</span>
-<span>27</span>
-<span>28</span>
-<span>29</span>
-<span>30</span>
-<span>31</span>
-<span class="dateBlank">1</span>
-<span class="dateBlank">2</span>
-<span class="dateBlank">3</span>
-</div>
-		<br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  -->
+      <span class="dateBlank">31</span>
+      <span class="dayNum">1</span>
+      <span class="dayNum">2</span>
+      <span class="dayNum">3</span>
+      <span class="dayNum">4</span>
+      <span class="dayNum">5</span>
+      <span class="dayNum">6</span>
+      <span class="dayNum">7</span>
+      <span class="dayNum">8</span>
+      <span class="dayNum">9</span>
+      <span class="dayNum">10</span>
+      <span class="dayNum">11</span>
+      <span class="dayNum">12</span>
+      <span class="dayNum">13</span>
+      <span class="dayNum">14</span>
+      <span class="dayNum">15</span>
+      <span class="dayNum">16</span>
+      <span class="dayNum">17</span>
+      <span class="dayNum">18</span>
+      <span class="dayNum">19</span>
+      <span class="dayNum">20</span>
+      <span class="dayNum">21</span>
+      <span class="dayNum">22</span>
+      <span class="dayNum">23</span>
+      <span class="dayNum">24</span>
+      <span class="dayNum">25</span>
+      <span class="dayNum">26</span>
+      <span class="dayNum">27</span>
+      <span class="dayNum">28</span>
+      <span class="dayNum">29</span>
+      <span class="dayNum">30</span>
+      <span class="dayNum">31</span>
+      <span class="dateBlank">1</span>
+      <span class="dateBlank">2</span>
+      <span class="dateBlank">3</span>
+    </div>
+  </div>
+		{{!-- <br><br><br><br><br><br><br><br><br><br> <!-- This lets the nav bar not cover stuff  --> --}}
 
   <div class="navbar">
 		{{#each navbarButtons}}

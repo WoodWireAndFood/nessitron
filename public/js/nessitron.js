@@ -19,7 +19,7 @@ function initializePage() {
         if(journalData){
                 for(i = 0; i<journalData.length; i+=4)
                 {
-                var htmlBlock =     '<a href="#" class="list-group-item list-group-item-action" aria-current="true">' +
+                var htmlBlock =     '<a href="#" class="list-group-item list-group-item-action journalentry" aria-current="true">' +
                                     '<div class="d-flex w-100 justify-content-between">' +
                                     '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + journalData[i] +'</h2>'+
                                     '<h4 class="mb-1" id="userFeeling">' + journalData[i+1] +'</h2>'+

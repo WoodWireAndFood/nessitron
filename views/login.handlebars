@@ -5,26 +5,32 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/new_nessitron.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
 
-<div class="container">
-	<div class="my-auto text-center">
-			<h1>Welcome to Nessitron</h1>
-			<div class="list-group" "text-center">
-				<form class="login-form" action="auth">
-					<label for="uname">Username:</label>
-					<input type="text" id="uname" name="uname"><br>
-					<label for="pword">Password: </label>
-					<input type="password" id="pword" name="pword"><br>
-					<div id="badLogin"><p style="color:red">{{loginMessage}}</p></div>
-					<input type="submit" value="Login">
-				</form>
-				<h2><a href="newAccount">Click here to create a new account.</a></h2>
+	<div class="container">
+		<div class="my-auto text-center">
+				<h1 class="login">Welcome to Nessitron!</h1>
+				<div class="list-group" "text-center">
+					<form class="login-form" action="auth">
+						{{!-- <label for="uname">Username:</label> --}}
+
+						<input class="login-section" placeholder="&#xf007;   Username" type="text" id="uname" name="uname"><br>
+						{{!-- <label for="pword">Password: </label> --}}
+						<input class="login-section" placeholder="&#xf023;   Password" type="password" id="pword" name="pword"><br>
+						<div id="badLogin"><p style="color:red">{{loginMessage}}</p></div>
+						<input class="signinbtn" type="submit" value="Sign in">
+					</form>
+					<a href="newAccount" class="nostyle"><button type="button" class="signupbtn">Sign up</button></a>
+
+			</div>
 		</div>
 	</div>
-</div>
 
 </body>
 </html>

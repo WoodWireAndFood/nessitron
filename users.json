@@ -1,17 +1,1 @@
-
-{
-    "users": 
-    {
-    "testuser1":{
-        "password":"swordfish",
-        "journal":[
-            {
-                "emotion": "An emotion",
-                "feeling": "A feeling",
-                "date": "02-22-2021",
-                "text": "Oooooh sometimes, I get a feeling"
-            }
-        ]
-        }
-    }
-}
+{"users":{"testuser1":{"password":"swordfish","journal":[{"emotion":"An emotion","feeling":"A feeling","date":"02-22-2021","text":"Oooooh sometimes, I get a feeling"}]},"fdsa":{"password":"fdsa","journal":[]},"Nessif":{"password":"f","journal":[]},"f":{"password":"f","journal":[]}}}

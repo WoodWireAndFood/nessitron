@@ -2,67 +2,72 @@
 
 body {
   /*background-color:#282423;*/
+  font-family: 'Nunito';
 }
 
 .calendarBox {
-  width: 734px;
+  /* width: 734px; */
+  width: 90%;
   background:#332f2e; 
   border-radius:45px; 
   overflow:hidden; 
   display:block; 
-  margin-bottom:10px; 
+  /* margin-bottom:10px;  */
+  margin-bottom: 30%;
   box-shadow:0 0 10px #201d1c; 
   margin:0 auto; 
-  margin-top:100px;
+  /* margin-top:100px; */
+  margin-top: 15%;
 }
 
 .calendarFormat {
   padding:10px 10px 20px 10px; 
   box-sizing:border-box!important; 
-  background: rgb(200,117,135);
-  background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 50%, rgba(254,193,150,1) 100%);
+  /* background: rgb(200,117,135); */
+  /* background: linear-gradient(90deg, rgba(200,117,135,1) 0%, rgba(214,161,132,1) 50%, rgba(254,193,150,1) 100%); */
+  background-color: rgb(203, 203, 203);
 }
 
 .monthLabel {
-  font:28px 'Roboto'; 
-  font-weight:700; 
+  font: 28px 'Nunito';
+  font-weight: 700; 
   /*color:#f7f3eb; */
-  color: white;
-  display:block; 
-  margin:0px 0 10px 0; 
+  color: black;
+  display: block; 
+  margin: 0px 0 10px 0; 
   /*text-transform:uppercase; */
-  text-align:center; 
-  letter-spacing:2px;
+  text-align: center; 
+  letter-spacing: 2px;
 }
 
 .calendarFormat span {
-  font:26px 'Roboto'; 
-  font-weight:400; 
+  font: 23px 'Nunito';
+  font-weight: 400; 
   /*color:#f7f3eb; */
   color: black;
-  text-align:center; 
-  width:102px; 
-  height:62px; 
-  display:inline-block; 
-  float:left; 
-  overflow:hidden; 
-  line-height:50px;
+  text-align: center; 
+  width: 14%;
+  
+  display: inline-block; 
+  float: left; 
+  overflow: hidden; 
 
   /*background-color: #28E1A1;*/
   background-color: white;
   border: 2px solid black;
   border-radius: 6px;
-
-  /*vertical-align: middle;*/
-
-
 }
-
 
 .dateBlank{
   opacity:0.3;
 }
+/* .daylabel {
+} */
 .dayLabel{
   opacity:0.7;
+  height: 5%;
 }
-
+.dayNum,
+.dateBlank {
+  height: 10%;
+}
