@@ -12,8 +12,8 @@ exports.view = function(req, res){
     var info = {};
     info.navbarButtons = [
       {
-        "aTag": "<a href=\"home\">",
-        "buttonTag": "<button class=\"navButton\">",
+        "aTag": "<a class=\"active\">",
+        "buttonTag": "<button class=\"navButton\" disabled>",
         "icon": "<i class=\"fas fa-plus fa-3x\"></i>",
         "label": "Add Emotion"
       },
@@ -24,8 +24,8 @@ exports.view = function(req, res){
         "label": "Calendar"
       },
       {
-        "aTag": "<a class=\"active\">",
-        "buttonTag": "<button class=\"navButton\" disabled>",
+        "aTag": "<a href=\"journal\">",
+        "buttonTag": "<button class=\"navButton\">",
         "icon": "<i class=\"far fa-file-alt fa-3x\"></i>",
         "label": "Journal"
       },
