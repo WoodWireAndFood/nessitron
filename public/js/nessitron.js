@@ -19,25 +19,25 @@ function initializePage() {
         console.log("journal page");
         var cText = getCookie("username");
         // console.log(cText);
-        if(cText=="testuser1"){ //populating with garbage test data for users
-            console.log("testuser1 detected");
+        if(cText=="Chris"){ //populating with garbage test data for users
+            console.log("Chris detected");
             var htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
                                     '<div class="d-flex w-100 justify-content-between">' +
-                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-2" +'</h2>'+
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-9" +'</h2>'+
                                     '<h4 class="mb-1" id="userFeeling">' + "Hopeless" +'</h2>'+
                                     '</div>'+
                                     '<p class="mb-1" id="userJournal">' + "Today I woke up, did homework, then went to sleep." +'</p>' + '</li>' + '<br>';
             $("#journals").append(htmlBlock);
             htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
                                     '<div class="d-flex w-100 justify-content-between">' +
-                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-3" +'</h2>'+
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-10" +'</h2>'+
                                     '<h4 class="mb-1" id="userFeeling">' + "Happy" +'</h2>'+
                                     '</div>'+
                                     '<p class="mb-1" id="userJournal">' + "Dogs were finally declared better than cats" +'</p>' + '</li>' + '<br>';
             $("#journals").append(htmlBlock);
             htmlBlock =     '<li class="list-group-item list-group-item-action" aria-current="true">' +
                                     '<div class="d-flex w-100 justify-content-between">' +
-                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-4" +'</h2>'+
+                                    '<h2 class="mb-1" style="margin-top: 10px;" id="userDate">' + "3-11" +'</h2>'+
                                     '<h4 class="mb-1" id="userFeeling">' + "Resigned" +'</h2>'+
                                     '</div>'+
                                     '<p class="mb-1" id="userJournal">' + "Today I woke up, did homework, then went to sleep." +'</p>' + '</li>' + '<br>';
@@ -71,16 +71,17 @@ function initializePage() {
         var currDay = currentDate.getDate();
         $( "span" ).each(function(  ) { //For every span
             if ($(this).context.innerText.trim() == ""+currDay+"".trim()){ //if the number equals the current date
-                $(this).css('background-color',"#F3BD9D")
+                // $(this).css('background-color',"#F3BD9D")
                 return false; //this basically ensures we don't overlap, except during dates that won't happen until after the final is due. return false is break return true is continue
             }
             else //if it doesn't, basically do nothing
                 var temp = 0;
         });
         var cText = getCookie("username");
-        if (cText=="testuser1"){
+        if (cText=="Chris"){
             $("#WOZ1").css('background-color', "#98C1D9")
             $("#WOZ2").css('background-color', "#85BAA1")
+            $("#WOZ3").css('background-color', "#98C1D9")
         }
         $( "span" ).each(function(  ) {
             if (journalData){
